@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Log-In</title>
+    <style>
+      #navbar {
+        height: 60px;
+        width: 100%;
+        margin-bottom: 40px;
+        font-size: 20px;
+      }
+      #form {
+        height: 300px;
+        width: 30%;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        border-radius: 10px;
+        margin: auto;
+      }
+      h1 {
+        text-align: center;
+        padding-top: 20px;
+      }
+      form {
+        display: grid;
+        grid-template-columns: 90%;
+        grid-template-rows: repeat(5,40px);
+        gap: 20px;
+        padding-left: 30px;
+      }
+      #log_in {
+        background-color: lightgreen;
+        border: 0px;
+        border-radius: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="navbar">
+      <a href="/index.html" id="home">Home</a>
+      <a href="/signup.html" id="signUp">Sign Up</a>
+    </div>
+    <div id="form">
+      <h1>User Log In</h1>
+      <!-- - The input fields will have ids:- "email" and "password"- The log-in button will have id:- "log_in".   -->
+      <form>
+        <input id="emails" placeholder="Email ID" type="text" required>
+        <input id="password" placeholder="Password" type="text" required>
+        <input id="log_in" type="submit" value="Log In">
+      </form>
+    </div>
+  </body>
+</html>
+<script src="login.js"></script>
